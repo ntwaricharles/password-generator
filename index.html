@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="password-container">
+            <input type="text" class="password" placeholder="PTx1f5DaFX" disabled>
+            <button class="copy-btn">
+                <img src = "images/icon-copy.svg">
+            </button>
+        </div>
+        <div class="options">
+            <div class="length-container">
+                <h3 class="text"> Character length</h3>
+                <h3 class="length"> 10</h3>
+            </div>
+            <input class="styled-slider slider-progress" type="range" name="length" id="length" value="10" min="5" max="20" step="1">
+
+            <div class="options-container">
+                <div class="radio-field">
+                    <input type="checkbox" name="options" id="uppercase" value="uppercase">
+                    <img class="checkbox-icon" src="./images/icon-check.svg" alt="">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="radio-field">
+                    <input type="checkbox" name="options" id="lowercase" value="lowercase">
+                    <img class="checkbox-icon" src="./images/icon-check.svg" alt="">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="radio-field">
+                    <input type="checkbox" name="options" id="numbers" value="numbers">
+                    <img class="checkbox-icon" src="./images/icon-check.svg" alt="">
+                    <label for="numbers">Includes Numbers</label>
+                </div>
+                <div class="radio-field">
+                    <input type="checkbox" name="options" id="symbols" value="symbols">
+                    <img class="checkbox-icon" src="./images/icon-check.svg" alt="">
+                    <label for="symbols">Includes Symbols</label>
+                </div>
+            </div>
+            <div class="pwd-strength"></div>
+            <button class="generate-btn"> <span>GENERATE</span>
+                <img src = "images/icon-arrow-right.svg ">
+            </button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
