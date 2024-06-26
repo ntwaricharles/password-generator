@@ -34,7 +34,7 @@ h2 {
     background-color: #24232C;
     padding-inline: 32px;
     width: 400px;
-    height: 60px;
+    height: 90px;
 }
 
 .password {
@@ -42,11 +42,15 @@ h2 {
     background: transparent;
     font-weight: 700;
     font-size: 20px;
+    color: #fff;
 }
 
 .copy-btn {
     border: none;
     background: transparent;
+}
+.copy-btn:hover{
+    color: #fff;
 }
 
 .length-container {
@@ -60,12 +64,42 @@ h2 {
     color: #A4FFAF;
 }
 
+.inputRange {
+  appearance: none;
+  width: 350px;
+  height: 8px;
+  border: 1px solid #333333;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #a4ffaf 30%, #000000 30%);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Thumb: for Chrome, Safari, Edge */
+.inputRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #ffffff;
+}
+
+/* Thumb: for Firefox */
+.inputRange::-moz-range-thumb {
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #ffffff;
+}
+
 .options {
     background-color: #24232C;
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 300px;
+    height: 300px; 
     padding: 24px;
     font-size: 16px;
 }
@@ -81,7 +115,7 @@ h2 {
     align-items: center;
     gap: 20px;
     position: relative;
-    margin-bottom: 10px; /* Add margin between radio fields */
+    margin-bottom: 10px;
 }
 
 .radio-field label {
@@ -132,7 +166,45 @@ input[type=checkbox]:checked + img {
     border-radius: none;
     border: none;
     padding-block: 10px;
-    margin-top: auto; /* Push the button to the bottom */
+    margin-top: auto;
+}
+
+.pwd-strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #18171F;
+    border-radius: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.strength-label {
+    font-weight: bold;
+}
+
+.strength-level {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.strength-indicator {
+    display: flex;
+    margin-left: 20px;
+}
+
+.strength-bar {
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: #e0e0e0;
+}
+
+.strength-bar.filled {
+    background-color: #A4FFAF; 
 }
 
 .generate-btn:hover {
@@ -145,3 +217,5 @@ input[type=checkbox]:checked + img {
 .generate-btn:hover > img {
     fill: #A4FFAF;
 }
+
+/*I have used on width * length my measures tries to look like given  figma design but not a requested ones in figma*/
